@@ -1,0 +1,128 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  AFNetworking-Pods-flutter_demo:
+    BUILD_SETTINGS_CHECKSUM:
+      AFNetworking-Pods-flutter_demo:
+        :debug: 8c1b1ffa24c34176ab9f17f5f54c0345
+        :release: 8c1b1ffa24c34176ab9f17f5f54c0345
+    CHECKSUM: eec044b14dd9babb44909d33412dbaa605336527
+    PROJECT_NAME: AFNetworking
+    SPECS:
+      - AFNetworking (20211103.3.1.0.0)
+      - AFNetworking/NSURLSession (20211103.3.1.0.0)
+      - AFNetworking/Reachability (20211103.3.1.0.0)
+      - AFNetworking/Security (20211103.3.1.0.0)
+      - AFNetworking/Serialization (20211103.3.1.0.0)
+      - AFNetworking/UIKit (20211103.3.1.0.0)
+  AFNetworking-Pods-flutter_demo-flutter_demoUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      AFNetworking-Pods-flutter_demo-flutter_demoUITests:
+        :debug: 413dc1ed6100257a9490c1316ead76e1
+        :release: 413dc1ed6100257a9490c1316ead76e1
+    CHECKSUM: eec044b14dd9babb44909d33412dbaa605336527
+    PROJECT_NAME: AFNetworking
+    SPECS:
+      - AFNetworking (20211103.3.1.0.0)
+      - AFNetworking/NSURLSession (20211103.3.1.0.0)
+      - AFNetworking/Reachability (20211103.3.1.0.0)
+      - AFNetworking/Security (20211103.3.1.0.0)
+      - AFNetworking/Serialization (20211103.3.1.0.0)
+      - AFNetworking/UIKit (20211103.3.1.0.0)
+  Flutter-Pods-flutter_demo:
+    BUILD_SETTINGS_CHECKSUM:
+      Flutter-Pods-flutter_demo:
+        :debug: 5633b0fecd06c32153eb1517a8b43d1a
+        :release: 5633b0fecd06c32153eb1517a8b43d1a
+    CHECKSUM: f04841e97a9d0b0a8025694d0796dd46242b2854
+    FILES:
+      - "../../new_module/.ios/Flutter/README.md"
+    PROJECT_NAME: Flutter
+    SPECS:
+      - Flutter (1.0.0)
+  Flutter-Pods-flutter_demo-flutter_demoUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      Flutter-Pods-flutter_demo-flutter_demoUITests:
+        :debug: 294230afa9abe184d0b04ada4e915bd8
+        :release: 294230afa9abe184d0b04ada4e915bd8
+    CHECKSUM: f04841e97a9d0b0a8025694d0796dd46242b2854
+    FILES:
+      - "../../new_module/.ios/Flutter/README.md"
+    PROJECT_NAME: Flutter
+    SPECS:
+      - Flutter (1.0.0)
+  FlutterPluginRegistrant-Pods-flutter_demo:
+    BUILD_SETTINGS_CHECKSUM:
+      FlutterPluginRegistrant-Pods-flutter_demo:
+        :debug: dca8310e5d645138338903705540fb62
+        :release: dca8310e5d645138338903705540fb62
+    CHECKSUM: 58acfb6cb31ee4ca14f920aba101815efda113ee
+    FILES:
+      - "../../new_module/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.h"
+      - "../../new_module/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.m"
+    PROJECT_NAME: FlutterPluginRegistrant
+    SPECS:
+      - FlutterPluginRegistrant (0.0.1)
+  FlutterPluginRegistrant-Pods-flutter_demo-flutter_demoUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      FlutterPluginRegistrant-Pods-flutter_demo-flutter_demoUITests:
+        :debug: 8bf7aa26ea9fc6e81cca1951a81b36d6
+        :release: 8bf7aa26ea9fc6e81cca1951a81b36d6
+    CHECKSUM: 58acfb6cb31ee4ca14f920aba101815efda113ee
+    FILES:
+      - "../../new_module/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.h"
+      - "../../new_module/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.m"
+    PROJECT_NAME: FlutterPluginRegistrant
+    SPECS:
+      - FlutterPluginRegistrant (0.0.1)
+  Pods-flutter_demo:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: c227f31747a8c3d81df7a0aa44660856
+      Release: c227f31747a8c3d81df7a0aa44660856
+  Pods-flutter_demo-flutter_demoUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 2e6c06aaff207ed9651ccf3cee3c0189
+      Release: 2e6c06aaff207ed9651ccf3cee3c0189
+  Pods-flutter_demoTests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 22e82e0625ded4ab391acb7f8b2d6d53
+      Release: 22e82e0625ded4ab391acb7f8b2d6d53
+  SDWebImage-Pods-flutter_demo:
+    BUILD_SETTINGS_CHECKSUM:
+      SDWebImage-Pods-flutter_demo:
+        :debug: 6a780d938882a7e2037959844551ed75
+        :release: 6a780d938882a7e2037959844551ed75
+    CHECKSUM: d4a9649cdac62de66e83f7227b574a47f4fa20ed
+    PROJECT_NAME: SDWebImage
+    SPECS:
+      - SDWebImage (20220304.5.12.3.0)
+      - SDWebImage/Core (20220304.5.12.3.0)
+  SDWebImage-Pods-flutter_demo-flutter_demoUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      SDWebImage-Pods-flutter_demo-flutter_demoUITests:
+        :debug: d9621edb45200179f4f64603c4afdaf3
+        :release: d9621edb45200179f4f64603c4afdaf3
+    CHECKSUM: d4a9649cdac62de66e83f7227b574a47f4fa20ed
+    PROJECT_NAME: SDWebImage
+    SPECS:
+      - SDWebImage (20220304.5.12.3.0)
+      - SDWebImage/Core (20220304.5.12.3.0)
+INSTALLATION_OPTIONS:
+  clean: true
+  deduplicate_targets: false
+  deterministic_uuids: false
+  disable_input_output_paths: true
+  generate_multiple_pod_projects: true
+  incremental_installation: true
+  integrate_targets: true
+  lock_pod_sources: false
+  preserve_pod_file_structure: true
+  share_schemes_for_development_pods: false
+  skip_pods_project_generation: false
+  warn_for_multiple_pod_sources: true
+  warn_for_unused_master_specs_repo: true
+OBJECT_VERSION: 55
+PLUGINS:
+  cocoapods-flutter:
+    {}

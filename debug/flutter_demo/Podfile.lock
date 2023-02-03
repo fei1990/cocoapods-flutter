@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (20211103.3.1.0.0):
+    - AFNetworking/NSURLSession (= 20211103.3.1.0.0)
+    - AFNetworking/Reachability (= 20211103.3.1.0.0)
+    - AFNetworking/Security (= 20211103.3.1.0.0)
+    - AFNetworking/Serialization (= 20211103.3.1.0.0)
+    - AFNetworking/UIKit (= 20211103.3.1.0.0)
+  - AFNetworking/NSURLSession (20211103.3.1.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (20211103.3.1.0.0)
+  - AFNetworking/Security (20211103.3.1.0.0)
+  - AFNetworking/Serialization (20211103.3.1.0.0)
+  - AFNetworking/UIKit (20211103.3.1.0.0):
+    - AFNetworking/NSURLSession
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - SDWebImage (20220304.5.12.3.0):
+    - SDWebImage/Core (= 20220304.5.12.3.0)
+  - SDWebImage/Core (20220304.5.12.3.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Flutter (from `../flutter_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - SDWebImage
+
+SPEC REPOS:
+  "git@code.sohuno.com:mtpc_sh_ios/ios_sohu_spec.git":
+    - AFNetworking
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_module/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  AFNetworking: eec044b14dd9babb44909d33412dbaa605336527
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  FlutterPluginRegistrant: 58acfb6cb31ee4ca14f920aba101815efda113ee
+  SDWebImage: d4a9649cdac62de66e83f7227b574a47f4fa20ed
+
+PODFILE CHECKSUM: 776f3e29e083c2664e6a0e7f776a4bb2b8c04810
+
+COCOAPODS: 1.11.3

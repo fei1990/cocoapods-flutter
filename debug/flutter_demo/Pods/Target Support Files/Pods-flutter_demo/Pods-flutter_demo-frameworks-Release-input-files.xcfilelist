@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-flutter_demo/Pods-flutter_demo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
