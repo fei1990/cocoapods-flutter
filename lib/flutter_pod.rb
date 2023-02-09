@@ -8,6 +8,8 @@ module Pod
           requirements.each do |param|
             if param.is_a? Hash
               if param[:path]
+                # 源码引入时将platform设置到11.0版本
+                platform :ios, '11.0' 
                 # 本地源码集成
                 path = param[:path]
                 flutter_application_path = File.expand_path(name, path)

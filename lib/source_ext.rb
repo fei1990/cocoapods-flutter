@@ -13,6 +13,15 @@ module Pod
         source = source_with_url(url)
         return source if source
       end
+
+      def public_source
+        url = "https://github.com/CocoaPods/Specs.git"
+        source = source_with_url(url)
+        return source if source
+
+        Command::Repo::Add.parse(["master", url, "master"]).run
+        source_with_url(url)
+      end
     end
   end
 end
