@@ -1,6 +1,0 @@
-framework module Pods_flutter_demoTests {
-  umbrella header "Pods-flutter_demoTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
