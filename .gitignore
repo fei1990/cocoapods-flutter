@@ -195,3 +195,4 @@ build-iPhoneSimulator/
 debug/flutter_demo/Podfile.lock
 debug/flutter_demo/Pods
 debug/flutter_module/pubspec.lock
+debug/
