@@ -7,6 +7,7 @@
 
 #import "ViewController1.h"
 @import flutter_boost;
+@import mptc_common;
 
 @interface ViewController1 ()
 

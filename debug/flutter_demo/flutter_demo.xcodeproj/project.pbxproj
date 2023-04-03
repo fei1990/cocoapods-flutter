@@ -166,12 +166,12 @@
 			buildConfigurationList = B6F6CC342987B1FF00072BE4 /* Build configuration list for PBXNativeTarget "flutter_demo" */;
 			buildPhases = (
 				228E7C5FB29D6F39FE7DBDE5 /* [CP] Check Pods Manifest.lock */,
-				48A26DFDE130FA2099827F7E /* [CP-User] Run Flutter Build host Script */,
+				ABE10B2A514E03FB17810555 /* [CP-User] Run Flutter Build host Script */,
 				B6F6CC062987B1FE00072BE4 /* Sources */,
 				B6F6CC072987B1FE00072BE4 /* Frameworks */,
 				B6F6CC082987B1FE00072BE4 /* Resources */,
-				F2BA711211D5818B19EA287B /* [CP] Copy Pods Resources */,
-				588012984C4223CF84CF3AE8 /* [CP-User] Embed Flutter Build host Script */,
+				89228037A711D772D841A7A4 /* [CP] Copy Pods Resources */,
+				F2CCC1D66D8640EB62F499AC /* [CP-User] Embed Flutter Build host Script */,
 			);
 			buildRules = (
 			);
@@ -312,27 +312,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		48A26DFDE130FA2099827F7E /* [CP-User] Run Flutter Build host Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build host Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../../sohu/code/sohu_mobile_flutter_host/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
-		};
-		588012984C4223CF84CF3AE8 /* [CP-User] Embed Flutter Build host Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Embed Flutter Build host Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../../sohu/code/sohu_mobile_flutter_host/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
-		};
-		F2BA711211D5818B19EA287B /* [CP] Copy Pods Resources */ = {
+		89228037A711D772D841A7A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,6 +326,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flutter_demo/Pods-flutter_demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ABE10B2A514E03FB17810555 /* [CP-User] Run Flutter Build host Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build host Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../../sohu/code/sohu_mobile_flutter_host/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		F2CCC1D66D8640EB62F499AC /* [CP-User] Embed Flutter Build host Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build host Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../../sohu/code/sohu_mobile_flutter_host/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 /* End PBXShellScriptBuildPhase section */
 

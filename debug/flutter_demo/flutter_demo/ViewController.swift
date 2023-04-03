@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import mptc_common
+import flutter_boost
 
 class ViewController: UIViewController {
 

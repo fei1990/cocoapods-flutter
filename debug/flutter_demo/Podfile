@@ -22,12 +22,12 @@ end
 # pod install中间进行hook
 post_install do |installer|
   # 设置默认配置
-  #  installer.pods_project.targets.each do |target|
-  #    # puts target.name
-  #    target.build_configurations.each do |config|
-  #      config.build_settings['ENABLE_BITCODE'] = 'NO'
-  #    end
-  #  end
+    installer.pods_project.targets.each do |target|
+      # puts target.name
+      target.build_configurations.each do |config|
+        config.build_settings['ENABLE_BITCODE'] = 'YES'
+      end
+    end
 
   # 通过脚本的方式，设置组件间的链接路径
   aggregate_target = installer.aggregate_targets[0]
@@ -62,75 +62,75 @@ target "flutter_demo" do
   #  flutter_pod 'flutter_module', :path => './debug/'
 
 
-  pod 'SnapKit'
-  pod 'ReachabilitySwift', '20211104.4.3.0.0'#, :binary => false
-  pod 'AFNetworking', '20211103.3.1.0.0', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession']#,:binary => false
-  pod 'SnapKit'#, :binary => false
-  pod 'DeviceKit', '20211206.4.5.2.0'#, :binary => false
+#   pod 'SnapKit'
+#   pod 'ReachabilitySwift', '20211104.4.3.0.0'#, :binary => false
+#   pod 'AFNetworking', '20211103.3.1.0.0', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession']#,:binary => false
+#   pod 'SnapKit'#, :binary => false
+#   pod 'DeviceKit', '20211206.4.5.2.0'#, :binary => false
 
-  pod 'JPush'
+#   pod 'JPush'
 
-  # 网络层
-  pod 'SHMRequest'
+#   # 网络层
+#   pod 'SHMRequest'
 
-  # 崩溃统计相关
-  pod 'Bugly'
+#   # 崩溃统计相关
+#   pod 'Bugly'
 
-#  # 搜狐埋点SDK
-  pod 'SHMUBSiOS', :git => 'git@code.sohuno.com:MPTC-iOS/SHMUBSiOS.git', :tag=>'0.9.0'
+# #  # 搜狐埋点SDK
+#   pod 'SHMUBSiOS', :git => 'git@code.sohuno.com:MPTC-iOS/SHMUBSiOS.git', :tag=>'0.9.0'
 
-  # 文件解压
-  pod 'SSZipArchive', :git => 'git@code.sohuno.com:MPTC-iOS/SSZipArchive.git', :branch=>'feature/shouso_version'#, :binary => false
+#   # 文件解压
+#   pod 'SSZipArchive', :git => 'git@code.sohuno.com:MPTC-iOS/SSZipArchive.git', :branch=>'feature/shouso_version'#, :binary => false
 
 
-  pod 'SHJSBridge',:git =>'git@code.sohuno.com:MPTC-iOS/SHJSBridge.git',:branch=>'feature/base_1.1.0'
+#   pod 'SHJSBridge',:git =>'git@code.sohuno.com:MPTC-iOS/SHJSBridge.git',:branch=>'feature/base_1.1.0'
 
-  # 下发系统SDK
-  pod 'Jarvis', '1.0.1'#, :binary => false
+#   # 下发系统SDK
+#   pod 'Jarvis', '1.0.1'#, :binary => false
 
-  # 弹框组件
-  pod 'MBProgressHUD', '20211103.1.1.0.0'#, :binary => false
+#   # 弹框组件
+#   pod 'MBProgressHUD', '20211103.1.1.0.0'#, :binary => false
 
-  # 异步绘制组件，网络原因，不自动更新
-  pod 'Texture', '20220825.3.1.0.0-beta'
-#  pod 'Texture', :path => '/Users/Annabelle/Desktop/工具组件/Texture', :tag => '20220823.3.1.0.0'
-  pod 'PINRemoteImage', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINRemoteImage.git', :tag=>'3.0.3'
-  pod 'PINCache', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINCache.git', :tag=>'3.0.3'
-  pod 'PINOperation', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINOperation.git', :tag=>'1.2.1'
+#   # 异步绘制组件，网络原因，不自动更新
+#   pod 'Texture', '20220825.3.1.0.0-beta'
+# #  pod 'Texture', :path => '/Users/Annabelle/Desktop/工具组件/Texture', :tag => '20220823.3.1.0.0'
+#   pod 'PINRemoteImage', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINRemoteImage.git', :tag=>'3.0.3'
+#   pod 'PINCache', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINCache.git', :tag=>'3.0.3'
+#   pod 'PINOperation', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/PINOperation.git', :tag=>'1.2.1'
   
 
-  # 加密组件
-  pod 'CryptoSwift', '20211101.1.4.0.0'#, :binary => false
+#   # 加密组件
+#   pod 'CryptoSwift', '20211101.1.4.0.0'#, :binary => false
 
-  # 工具组件【cocoapods-binary插件bug，无法为附带bundle资源的组件生成framework】
-  # LoginKit里面有这个组件的全局依赖, 这边不用加也可以
-  pod 'SHNToolKit', '20220804.1.4.0.1'
+#   # 工具组件【cocoapods-binary插件bug，无法为附带bundle资源的组件生成framework】
+#   # LoginKit里面有这个组件的全局依赖, 这边不用加也可以
+#   pod 'SHNToolKit', '20220804.1.4.0.1'
 
-  # 网路组件
-  pod 'SBNNetwork', '20211103.1.0.8.0'#, :binary => false
+#   # 网路组件
+#   pod 'SBNNetwork', '20211103.1.0.8.0'#, :binary => false
 
-  # 分享组件
-  pod 'SHNShareKit', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/SHNShareKit.git', :tag=>'20220428.0.0.7.0', :subspecs => ['core','shouso']
+#   # 分享组件
+#   pod 'SHNShareKit', :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/SHNShareKit.git', :tag=>'20220428.0.0.7.0', :subspecs => ['core','shouso']
 
-# pod 'SHNRouter', :path=> "/Users/Annabelle/Desktop/工具组件/SHNRouter"
+# # pod 'SHNRouter', :path=> "/Users/Annabelle/Desktop/工具组件/SHNRouter"
 
-#  pod 'SoHuHost',:git=>'git@code.sohuno.com:MOBILE-BASIC/SoHuHost.git',:tag=>'20220629.1.0.0.1'
-#  pod 'SHNRouter', '20220630.1.0.11.0', :subspecs => ['Core','Flutter']
-
-
-  pod 'WCDB', '20211207.1.0.8.2.0'
-
-  # 图片裁剪组件
-  pod 'RSKImageCropper', '20211214.1.6.3.0'
-
-  # 图片浏览器
-
-  pod 'KSPhotoBrowser' , :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/KSPhotoBrowser.git', :tag=> '20221206.0.3.1.2'
-
-  pod 'SHNRouter',:git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/SHNRouter.git',:tag=>'20230105.1.0.20.0', :subspecs => ['Core','Flutter']
+# #  pod 'SoHuHost',:git=>'git@code.sohuno.com:MOBILE-BASIC/SoHuHost.git',:tag=>'20220629.1.0.0.1'
+# #  pod 'SHNRouter', '20220630.1.0.11.0', :subspecs => ['Core','Flutter']
 
 
-  pod "AFNetworking"
+#   pod 'WCDB', '20211207.1.0.8.2.0'
+
+#   # 图片裁剪组件
+#   pod 'RSKImageCropper', '20211214.1.6.3.0'
+
+#   # 图片浏览器
+
+#   pod 'KSPhotoBrowser' , :git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/KSPhotoBrowser.git', :tag=> '20221206.0.3.1.2'
+
+#   pod 'SHNRouter',:git=>'git@code.sohuno.com:MTPC_SH_THIRDMODULE/SHNRouter.git',:tag=>'20230105.1.0.20.0', :subspecs => ['Core','Flutter']
+
+
+#   pod "AFNetworking"
   pod "SDWebImage", "5.15.2"
-  pod "SHMUBSiOS", git: "git@code.sohuno.com:MPTC-iOS/SHMUBSiOS.git", tag: "0.9.0"
+  # pod "SHMUBSiOS", git: "git@code.sohuno.com:MPTC-iOS/SHMUBSiOS.git", tag: "0.9.0"
 end

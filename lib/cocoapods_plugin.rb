@@ -1,6 +1,6 @@
 # require "cocoapods-flutter/command"
 # 暴漏头文件（命令、插件）
-require 'pathname'
+require "pathname"
 require "cocoapods"
 require "source_ext"
 require "flutter_pod"
@@ -22,10 +22,10 @@ module Pod
 
     @hooks_manager = Pod::HooksManager
     @hooks_manager.register("cocoapods-flutter", :pre_integrate) do |_context, _option|
-      p "pre_integrate"
+      UI.message "pre_integrate"
     end
     @hooks_manager.register("cocoapods-flutter", :pre_install) do |_content, _options|
-      puts "pre_install"
+      UI.message "pre_install"
       spec_path1 = File.expand_path("~/.cocoapods/repos/ios_sohu_spec/")
       spec_path2 = File.expand_path("~/.cocoapods/repos/SHSpecs/")
       p = Pathname.new(spec_path1)
@@ -42,12 +42,13 @@ module Pod
       end
     end
     @hooks_manager.register("cocoapods-flutter", :source_provider) do |context, _options|
-      puts "source_provider"
+      UI.message "source_provider"
       source_manager = Pod::Config.instance.sources_manager
       context.add_source(source_manager.private_source1)
       context.add_source(source_manager.private_source2)
     end
     @hooks_manager.register("cocoapods-flutter", :post_install) do |_context, _options|
+      UI.message "post_install"
     end
   end
 end

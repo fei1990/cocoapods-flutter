@@ -4,5 +4,5 @@ if $PROGRAME_NAME == __FILE__
 end
 
 require "cocoapods"
-project_directory = File.expand_path("debug/flutter_demo")
+project_directory = File.expand_path("debug/flutter_test1/Example")
 Pod::Command.run(["install", "--project-directory=#{project_directory}"])
