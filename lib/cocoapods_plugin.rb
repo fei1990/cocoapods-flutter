@@ -1,4 +1,4 @@
-# require "cocoapods-flutter/command"
+require "cocoapods-flutter/command"
 # 暴漏头文件（命令、插件）
 require "pathname"
 require "cocoapods"

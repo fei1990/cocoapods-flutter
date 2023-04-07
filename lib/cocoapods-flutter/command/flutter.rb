@@ -1,3 +1,5 @@
+require "cocoapods"
+require "cocoapods/command"
 module Pod
   class Command
     # This is an example of a cocoapods plugin adding a top-level subcommand
@@ -17,27 +19,16 @@ module Pod
     # @todo Create a PR to add your plugin to CocoaPods/cocoapods.org
     #       in the `plugins.json` file, once your plugin is released.
     #
-    class Flutter < Command
-      self.summary = 'Short description of cocoapods-flutter.'
+    class FLT < Command
+      self.summary = "flutter pod."
 
       self.description = <<-DESC
-        Longer description of cocoapods-flutter.
+        To resolve dependencies when import flutter.
       DESC
 
-      self.arguments = 'NAME'
-
-      def initialize(argv)
-        @name = argv.shift_argument
-        super
-      end
-
-      def validate!
-        super
-        help! 'A Pod name is required.' unless @name
-      end
-
       def run
-        UI.puts "Add your implementation for the cocoapods-flutter plugin in #{__FILE__}"
+        `rm -rf ~/Library/Developer/Xcode/DerivedData/`
+        Pod::Command.run(["install"])
       end
     end
   end
