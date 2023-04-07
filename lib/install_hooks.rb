@@ -9,14 +9,14 @@ module Pod
       pod_target_subprojects.each do |pod_subproject|
         pod_subproject.native_targets.each do |target|
           if defined?(flutter_post_install)
-            bind_framework_search_path target,
-                                       aggregate_target.user_project.root_object.name
+            resolve_dependencies target,
+                                 aggregate_target.user_project.root_object.name
           end
         end
       end
     end
 
-    def bind_framework_search_path(target, root_project_name)
+    def resolve_dependencies(target, root_project_name)
       return unless target.platform_name == :ios
 
       # [target.deployment_target] is a [String] formatted as "8.0".
