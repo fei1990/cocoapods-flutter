@@ -9,14 +9,14 @@ module Pod
       pod_target_subprojects.each do |pod_subproject|
         pod_subproject.native_targets.each do |target|
           if defined?(flutter_post_install)
-            resolve_dependency_flutter_sourceCode target,
+            resolve_flutter_dependency target,
                                                   aggregate_target.user_project.root_object.name
           end
         end
       end
     end
 
-    def resolve_dependency_flutter_sourceCode(target, root_project_name)
+    def resolve_flutter_dependency(target, root_project_name)
       return unless target.platform_name == :ios
 
       # [target.deployment_target] is a [String] formatted as "8.0".
